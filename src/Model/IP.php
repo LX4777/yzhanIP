@@ -6,7 +6,7 @@ class IP {
   private $end = 0;
   private $raw = null;
   private $type = null;
-  public function __construct(string $start, string $end = null, string $type = null, string $raw = null) {
+  public function __construct(string $start, ?string $end = null, ?string $type = null, ?string $raw = null) {
     $this->start = $start;
     if ($end === null) $this->end = &$this->start;
     else $this->end = $end;
