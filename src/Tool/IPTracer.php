@@ -5,7 +5,7 @@ use YZhanIP\Data\URLData;
 use YZhanIP\Exception\IPTracerException;
 use YZhanIP\YZhanIP;
 class IPTracer {
-  static public function IsInUrl($ip, array $urls, array $opt = null) {
+  static public function IsInUrl($ip, array $urls, ?array $opt = null) {
     $ips = array();
     foreach ($urls as $url) {
       $ipCrawler = new IPCrawler($url, array_merge(array(
